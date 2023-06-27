@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Link rel="stylesheet" href="index3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>body{
+    background: linear-gradient(  120deg,#2980b9,#8e44ad);
+    height:100vh;
+
+    
+    margin:0;
+    padding:0;
+}
+.center{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+     height: 300px; 
+}
+.center h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+    border-bottom: 1px solid silver;
+    
+
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;  
+}
+ .txt_field{
+    width: 100%;
+    padding:0 5px;
+    height:50px;
+    font-size: 16px;
+    
+    border-bottom: 1px solid grey;
+    
+}
+label{
+    position: absolute;
+    translate: -169px 25px;
+    
+}
+#password,#username{
+    border:none;
+    background: none;
+    outline:none;
+    translate: 0 30px;
+    
+}
+.sign_up{
+    translate: 0 20px;
+}
+#submit{
+    translate: 0px 10px;
+    width:100%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: blue;
+    cursor: pointer;
+    
+}
+#submit:hover{
+    color: rgb(244, 245, 244);
+}
+</style>
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <div class="txt_field">
+                <input type="email"  required id="username" placeholder="Email" name="username">
+                <label></label>
+            </div>
+            <div class="txt_field">
+                <input type="password" required id="password" placeholder="password" name="password">
+                <label></label>
+            </div>
+            <div class="fpass">
+                <a href="#" style="color: red;">Forgot password</a>
+            </div>
+            <input type="submit" name="" value="Login" id="submit" placeholder="submit"> 
+            {{!-- <button type="submit">Login</button> --}}
+            <div class="sign_up">
+                Not a Member?<a href="/" >SignUp</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
